@@ -1,0 +1,28 @@
+package Berminghamshoes.Service;
+
+@Service
+public class ProductService {
+
+    private final ProductRepository productRepository;
+
+   
+    public ProductService(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
+	public ProductRepository getProductRepository() {
+		return productRepository;
+	}
+
+	public List<Product> getAllProducts() {
+		// TODO Auto-generated method stub
+		return productRepository.findAll();
+	}
+
+	public Product getProductById(Long id) {
+		// TODO Auto-generated method stub
+		return productRepository.findById(id).orElse(null);
+	}
+
+   
+}

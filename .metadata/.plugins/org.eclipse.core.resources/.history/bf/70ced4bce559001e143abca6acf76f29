@@ -1,0 +1,25 @@
+package Berminghamshoes.Service;
+
+import java.util.List;
+
+import Berminghamshoes.Model.CartItem;
+
+public class CartItemService {
+    CartItem saveCartItem(CartItem cartItem) {
+		return null;
+	}
+
+    CartItem getCartItemById(Long cartItemId) {
+		return null;
+	}
+
+    List<CartItem> getAllCartItems() {
+		return null;
+	}
+
+    CartItem updateCartItem(CartItem cartItem) {
+		return null;
+	}
+
+    void deleteCartItem(Long cartItemId) {
+	}
